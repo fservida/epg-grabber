@@ -1,0 +1,9 @@
+version: '3'
+services:
+  epg_grabber:
+    container_name: epg-Grabber
+    image: fservida/epg-grabber:latest
+    environment:
+      - TZ=Europe/Zurich
+    ports:
+      - "3000:3000"
